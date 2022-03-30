@@ -2,6 +2,10 @@
 
 #indexBody{
     background-color: #99ddff;
+    background-image: url("../../../static/img/collegewp.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #indexLogo{
