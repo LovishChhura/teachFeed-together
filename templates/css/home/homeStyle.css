@@ -5,8 +5,10 @@
 }
 
 #indexLogo{
-    display: inline-block;
-    float: left;
+    /*display: inline-block;*/
+    position: fixed;
+    top: 3.5rem;
+    left: 0rem;
 }
 
 #accessCode{
