@@ -3,12 +3,12 @@
   background-color: #ffffff;
   margin: 20px ;
   padding: 40px;
-  width: 70%;
+  width: 45%;
   min-width: 300px;
   position:fixed; 
-    top: 25%; 
+    top: 10%; 
     left: 15%;
-    border-radius: 7%; 
+    border-radius: 5%; 
 }
 
 /* Style the input fields */
