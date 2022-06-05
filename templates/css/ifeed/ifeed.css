@@ -1,0 +1,44 @@
+
+.logo{
+    display: inline-block;
+}
+
+h2{
+    display: inline-block;
+}
+
+#date{
+    display: inline-block;
+}
+
+#mainblock{
+    border: 5px;
+    border-color: black;
+}
+
+#a{
+    float: left;
+}
+
+.third{
+    display: inline;
+}
+
+#c{
+    position: relative;
+    top:-51px;
+    left: 500px;
+}
+
+#d{
+    position: relative;
+    top: -75px;
+    left:750px;
+    border: 2px solid black;
+    width: 200px;
+}
+
+#per2{
+    position: relative;
+    left:60px;
+}
