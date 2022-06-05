@@ -12,6 +12,8 @@
 
     <!--Added external css and js files -->
     <link rel="stylesheet" href="css/ifeed/ifeed.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <title>ifeed</title>
 </head>
 
@@ -77,7 +79,9 @@
 
 
         </div><!--thirddiv close-->
-
+        <div>
+            <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+        </div>
 
     </div> <!--main div close-->
 
@@ -106,6 +110,32 @@
          document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
          document.getElementById("date").innerHTML = Date();*/
     </script>
+
+<script>
+    google.charts.load('current', { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      // Set Data
+      var data = google.visualization.arrayToDataTable([
+        ['Price', 'Size'],
+        ['A', 0], ['B', 2], ['C', 4], ['D', 1], ['E', 6],
+        ['F', 3], ['G', 8], ['H', 5],
+        ['I', 10], ['J', 7], ['K', 9],
+        ['L',7],['M',3],['N',6],['O',7]
+      ]);
+      // Set Options
+      var options = {
+        title: 'House Prices vs. Size',
+        hAxis: { title: 'Feedback Question' },
+        vAxis: { title: 'Marks' },
+        legend: 'none'
+      };
+      // Draw
+      var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+      chart.draw(data, options);
+    }
+  </script>
 </body>
 
 </html>
