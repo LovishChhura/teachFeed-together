@@ -1,0 +1,11 @@
+<script>
+    function teacherr() {
+        var dep = document.getElementById("depTeach");
+        {%for t in teach %}
+        {% if dep = {{ t.department } } %}
+    var opt = document.createElement("option");
+    document.getElementById("teacherName").innerHTML += '<option id="' + i + '">' + {{t.department}} + '</option>';
+    {% endif %}
+    {% endfor %} 
+      }
+</script>
